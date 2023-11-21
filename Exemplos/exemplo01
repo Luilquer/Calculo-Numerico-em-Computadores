@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    float Eps_float = 1.0;
+    double Eps_double = 1.0;
+
+
+
+    while(Eps_float + 1 > 1)
+    {
+        Eps_float = Eps_float / 2;
+    }
+
+    printf("Dados do tipo float: ", Eps_float);
+
+    while(Eps_double + 1 > 1)
+    {
+        Eps_double = Eps_double / 2;
+    }
+
+    printf("Dados do tipo double: ", Eps_double);
+}
